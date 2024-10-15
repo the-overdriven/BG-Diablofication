@@ -28,6 +28,10 @@ BEGIN
             %lock_scroll_lua_fn%()
             Infinity_OnPortraitDblClick(%portrait%)
         ~~~~~
+        REPLACE_TEXTUALLY CASE_SENSITIVE EXACT_MATCH ~Infinity_OnPortraitLClick(%portrait%)~ ~~~~~
+            %lock_scroll_lua_fn%()
+            Infinity_OnPortraitLClick(%portrait%)
+        ~~~~~
     END
 END
 
